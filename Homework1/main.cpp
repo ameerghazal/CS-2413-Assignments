@@ -46,8 +46,7 @@ using namespace std;
 // ======= Task 2 =======
 // Design and implement all member functions of the
 // following two classes: Student and University.
-// All member functions must be implemented outside
-// the class definitions.
+// All member functions must be implemented outside the class definitions.
 
 
 class Student {
