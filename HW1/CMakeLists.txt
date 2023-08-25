@@ -3,4 +3,4 @@ project(HW1)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(HW1 main.cpp)
+add_executable(HW1 HW1_CS2413.cpp)
