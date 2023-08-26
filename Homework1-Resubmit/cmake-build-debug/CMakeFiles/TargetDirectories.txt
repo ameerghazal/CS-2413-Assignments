@@ -1,3 +1,0 @@
-C:/Users/ameer/OneDrive/Undergraduate University/Fall 2023, University of Oklahoma/CS 2413/Homework/Homework1-Resubmit/cmake-build-debug/CMakeFiles/Homework1_Resubmit.dir
-C:/Users/ameer/OneDrive/Undergraduate University/Fall 2023, University of Oklahoma/CS 2413/Homework/Homework1-Resubmit/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ameer/OneDrive/Undergraduate University/Fall 2023, University of Oklahoma/CS 2413/Homework/Homework1-Resubmit/cmake-build-debug/CMakeFiles/rebuild_cache.dir
