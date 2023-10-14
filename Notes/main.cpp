@@ -9,6 +9,20 @@ void swap(int *a, int *b) {
 
 int main() {
 
+
+    // Exam Working:
+
+
+    int a[2] = {1,2};
+    int *ap = a;
+    swap(a[0], a[1]);
+
+    for (int index = 0; index < 2; ++index) {
+        cout << *ap++ << " LOLOL";
+    }
+
+
+
 //  Proper declaration and assignment of a pointer.
     int x = 5;
     int *ptr = &x; // accesses the address of 5.

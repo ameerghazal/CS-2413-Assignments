@@ -180,7 +180,6 @@ int main()
     int sid;
     float gpa;
 
-
     // ======= Test 1 =======
 
     // This tests your constructor function, print function and header files.
