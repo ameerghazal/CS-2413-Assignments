@@ -418,68 +418,6 @@ Node* AVL::Remove(int key) {
     return temp;
 }
 
-/*
-    // Find the max node in the left subtree to fill the hole.
-    if (lHeight > rHeight) {
-
-        // Store the left node.
-        side = temp->Get_left();
-
-        if (side != nullptr) {
-            // Loop until the max's right is null.
-            while (side->Get_right() != nullptr) {
-                side = side->Get_right();
-            }
-        }
-    } else if (rHeight > lHeight) {
-        // Find the min node in the right subtree to fill the hole.
-        side = temp->Get_right();
-
-        if (side != nullptr) {
-            // Loop until min's left is null.
-            while (side->Get_left() != nullptr) {
-                side = side->Get_left();
-            }
-        }
-    } else if (lHeight == rHeight) {
-        // If the right and left are equal, cut links from the parent (it will have no kids).
-        Node* parent = temp->Get_parent();
-        if (parent->Get_key() > temp->Get_key()) parent->Set_left(nullptr);
-        else if (parent->Get_key() < temp->Get_key()) parent->Set_right(nullptr);
-        temp = nullptr;
-        return parent;
-    }
-
-    // 3): Now, we have either the max node in the left or the min node in the right, which is what we will use to replace the current node.
-
-    // Instead of reconnecting links, simply change the key value of the node we want to the remove to the min/max node key.
-    temp->Set_key(side->Get_key());
-
-    // Set the link from the min/max node's parent to its child if it has one.
-    Node* sideParent = side->Get_parent();
-
-
-    // If max node in the left, the only possible child would be a left child.
-    if (side->Get_left() != nullptr && key < temp->Get_key()) {
-        sideParent->Set_right(side->Get_left());
-    }
-
-        // If min node in the right, the only possible child would be a right if it has one.
-    else if (side->Get_right() != nullptr && key > temp->Get_key()) {
-        sideParent->Set_left(side->Get_right());
-    }
-
-    // 4): Remove the current placement of the max/min node.
-    side = nullptr;
-
-    // 5): Clear up space and return the new head.
-    delete sideParent;
-    delete side;
-    return temp;
-
-     /*
-
-}
 
 /**
  * Adds a new node stored at "p" and performs necessary rotations to restore the AVL property.
